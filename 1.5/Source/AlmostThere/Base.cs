@@ -18,7 +18,7 @@ namespace AlmostThere
         {
             Listing_Standard listingStandard = new Listing_Standard();
             listingStandard.Begin(rect);
-            AlmostThereSettings.AlmostThereHours = (int)listingStandard.SliderLabeled("AT_AlmostThereHours_Title".Translate(Settings.AlmostThereHours), Settings.AlmostThereHours, 0, 1000, 0.25f);
+            AlmostThereSettings.AlmostThereHours = (int)listingStandard.SliderLabeled("AT_AlmostThereHours_Title".Translate(AlmostThereSettings.AlmostThereHours), AlmostThereSettings.AlmostThereHours, 0, 1000, 0.25f);
             listingStandard.End();
             base.DoSettingsWindowContents(rect);
         }

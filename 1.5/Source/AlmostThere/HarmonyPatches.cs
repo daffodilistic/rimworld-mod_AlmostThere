@@ -41,7 +41,7 @@ namespace AlmostThere
                     var estimatedTicks = (float)CaravanArrivalTimeEstimator.EstimatedTicksToArrive(__instance, allowCaching: true);
                     var restTicksLeft = CaravanNightRestUtility.LeftRestTicksAt(__instance.Tile, Find.TickManager.TicksAbs);
                     estimatedTicks -= restTicksLeft;
-                    if (estimatedTicks / GenDate.TicksPerHour < Settings.AlmostThereHours)
+                    if (estimatedTicks / GenDate.TicksPerHour < AlmostThereSettings.AlmostThereHours)
                     {
                         __result = false;
                     }
